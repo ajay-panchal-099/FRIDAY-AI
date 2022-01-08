@@ -11,7 +11,7 @@ import datetime
 import subprocess
 import pyautogui
 import requests
-from Tkinter import *
+from tkinter import *
 import psutil
 
 import pyttsx3
@@ -20,10 +20,10 @@ import speech_recognition as sr
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voices', voices[0].id)  # change id for  changing  voice
-engine = pyttsx.init()
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
-r = sr.Recognizer()
+# engine = pyttsx.init()
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[1].id)
+# r = sr.Recognizer()
 info = ['I am Scarlet, a simple but efficient virtual assistant made by a 16 year old programmer in the summer of 2017',
         'I am your father Luke', 'I am Scarlet,I said that a ton of times already',
         'I am the one who needs no gun to get respect from no one on the street']
