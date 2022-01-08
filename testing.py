@@ -45,7 +45,7 @@ engine.say(random.choice(booting))
 engine.runAndWait()
 engine.say("Please write your name in the window")
 engine.runAndWait()
-name = raw_input("Your name:")
+name = input("Your name:")
 engine.say("Hello " + name + random.choice(userGreet))
 engine.runAndWait()
 
@@ -59,8 +59,7 @@ def greeting(data):
 def makeJoke():
     responeData = requests.get("http://api.icndb.com/jokes/random/?escape=javascript")
     joke = str(responeData.json()['value']['joke'])
-    print
-    joke
+    print(joke)
     engine.say(joke)
     engine.runAndWait()
     main()
@@ -104,7 +103,7 @@ def tDate(date):
 
 def Gmail(data):
     engine.say("Opening Email Client")
-    engine.runAndWait
+    engine.runAndWait()
     Call_URL = "http://gmail.com"
     mycmd = r'start chrome /new-tab {}'.format(Call_URL)
     subprocess.Popen(mycmd, shell=True)
@@ -114,9 +113,8 @@ def Gmail(data):
 
 def Amazon(data):
     engine.say("Opening Amazon to purchase " + data.split('buy', 1)[1])
-    engine.runAndWait
-    webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open(
-        "https://www.amazon.com/s/field-keywords=", data.split('buy', 1)[1])
+    engine.runAndWait()
+    webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open("https://www.amazon.com/s/field-keywords=", data.split('buy', 1)[1])
     main()
 
 
@@ -171,8 +169,7 @@ def main():
         print("Say something then wait.")
         audio = r.listen(source)
         sleep(1)
-        print
-        "\n" * 50
+        print("\n" * 50)
 
     try:
         data = r.recognize_google(audio)
@@ -240,13 +237,8 @@ def main():
             engine.say(random.choice(feelings))
             engine.runAndWait()
             main()
-
-
-
         else:
             main()
-
-
 
     except sr.UnknownValueError:
         sleep(2)
@@ -256,6 +248,5 @@ def main():
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recoginition Service;{0}".format(e))
         main()
-
 
 main()

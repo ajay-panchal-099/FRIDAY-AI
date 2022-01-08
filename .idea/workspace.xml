@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec4d8dbb-4e7b-4021-83b1-c212c930fc75" name="Changes" comment="added testing script" />
+    <list default="true" id="ec4d8dbb-4e7b-4021-83b1-c212c930fc75" name="Changes" comment="engine ready for testing">
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641671111532</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="engine ready for testing">
+      <created>1641671512969</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641671512969</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +283,7 @@
     <MESSAGE value="Added virtual Env" />
     <MESSAGE value="Added pyaudio module" />
     <MESSAGE value="added testing script" />
-    <option name="LAST_COMMIT_MESSAGE" value="added testing script" />
+    <MESSAGE value="engine ready for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="engine ready for testing" />
   </component>
 </project>
